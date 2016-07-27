@@ -11,7 +11,7 @@ curl --include --request POST http://localhost:3000/profiles \
     --header "Content-Type: application/json" \
     --data '{
       "place": {
-        "name": "Suzhou",
+        "name": "Tiger Leaping Gorge",
         "country": "China",
         "continent": "Asia"
       }

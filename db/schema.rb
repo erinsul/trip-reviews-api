@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727191955) do
+ActiveRecord::Schema.define(version: 20160727203945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,17 @@ ActiveRecord::Schema.define(version: 20160727191955) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.integer  "budget"
+    t.integer  "profile_id"
+    t.integer  "place_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "reviews", ["place_id"], name: "index_reviews_on_place_id", using: :btree
+  add_index "reviews", ["profile_id"], name: "index_reviews_on_profile_id", using: :btree
+
   create_table "tags", force: :cascade do |t|
     t.string   "descriptor", null: false
     t.datetime "created_at", null: false
@@ -58,4 +69,6 @@ ActiveRecord::Schema.define(version: 20160727191955) do
   add_index "users", ["token"], name: "index_users_on_token", unique: true, using: :btree
 
   add_foreign_key "examples", "users"
+  add_foreign_key "reviews", "places"
+  add_foreign_key "reviews", "profiles"
 end
