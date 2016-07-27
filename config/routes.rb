@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :places, except: [:new, :edit]
   resources :tags, except: [:new, :edit]
   resources :profiles, except: [:new, :edit]
   resources :examples, except: [:new, :edit]

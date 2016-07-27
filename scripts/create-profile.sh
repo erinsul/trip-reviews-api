@@ -7,6 +7,16 @@ curl --include --request POST http://localhost:3000/profiles \
     }
   }'
 
+  curl --include --request POST http://localhost:3000/places \
+    --header "Content-Type: application/json" \
+    --data '{
+      "place": {
+        "name": "Suzhou",
+        "country": "China",
+        "continent": "Asia"
+      }
+    }'
+
   curl --include --request POST http://localhost:3000/tags \
     --header "Content-Type: application/json" \
     --data '{
