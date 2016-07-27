@@ -6,3 +6,11 @@ curl --include --request POST http://localhost:3000/profiles \
       "bio": "I am cool and like to travel yo."
     }
   }'
+
+  curl --include --request POST http://localhost:3000/tags \
+    --header "Content-Type: application/json" \
+    --data '{
+      "tag": {
+        "descriptor": "culture"
+      }
+    }'
