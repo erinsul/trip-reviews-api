@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20160727203945) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "reviews", force: :cascade do |t|
+  create_table "trips", force: :cascade do |t|
     t.integer  "budget"
     t.integer  "profile_id"
     t.integer  "place_id"
@@ -48,8 +48,8 @@ ActiveRecord::Schema.define(version: 20160727203945) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "reviews", ["place_id"], name: "index_reviews_on_place_id", using: :btree
-  add_index "reviews", ["profile_id"], name: "index_reviews_on_profile_id", using: :btree
+  add_index "trips", ["place_id"], name: "index_trips_on_place_id", using: :btree
+  add_index "trips", ["profile_id"], name: "index_trips_on_profile_id", using: :btree
 
   create_table "tags", force: :cascade do |t|
     t.string   "descriptor", null: false
@@ -69,6 +69,6 @@ ActiveRecord::Schema.define(version: 20160727203945) do
   add_index "users", ["token"], name: "index_users_on_token", unique: true, using: :btree
 
   add_foreign_key "examples", "users"
-  add_foreign_key "reviews", "places"
-  add_foreign_key "reviews", "profiles"
+  add_foreign_key "trips", "places"
+  add_foreign_key "trips", "profiles"
 end

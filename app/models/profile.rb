@@ -1,5 +1,5 @@
 class Profile < ActiveRecord::Base
   validates :name, :bio, presence: true
-  has_many :reviews
-  has_many :places, through: :reviews
+  has_many :trips
+  has_many :places, through: :trips
 end

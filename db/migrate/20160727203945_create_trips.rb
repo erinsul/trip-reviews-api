@@ -1,7 +1,7 @@
-class CreateReviews < ActiveRecord::Migration
+class CreateTrips < ActiveRecord::Migration
   def change
-    create_table :reviews do |t|
-      t.integer :budget, null: false
+    create_table :trips do |t|
+      t.boolean :visited, null: false
       t.references :profile, index: true, foreign_key: true
       t.references :place, index: true, foreign_key: true
 

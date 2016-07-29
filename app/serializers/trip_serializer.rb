@@ -1,4 +1,4 @@
-class ReviewSerializer < ActiveModel::Serializer
+class TripSerializer < ActiveModel::Serializer
   attributes :id, :budget
   has_one :profile
   has_one :place
