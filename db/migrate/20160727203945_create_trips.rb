@@ -4,6 +4,7 @@ class CreateTrips < ActiveRecord::Migration
       t.boolean :visited, null: false
       t.references :profile, index: true, foreign_key: true
       t.references :place, index: true, foreign_key: true
+      t.references :tag, index: true, foreign_key: true
 
       t.timestamps null: false
     end

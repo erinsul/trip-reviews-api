@@ -40,22 +40,24 @@ ActiveRecord::Schema.define(version: 20160727203945) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tags", force: :cascade do |t|
+    t.string   "descriptor", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "trips", force: :cascade do |t|
-    t.integer  "budget"
+    t.boolean  "visited",    null: false
     t.integer  "profile_id"
     t.integer  "place_id"
+    t.integer  "tag_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   add_index "trips", ["place_id"], name: "index_trips_on_place_id", using: :btree
   add_index "trips", ["profile_id"], name: "index_trips_on_profile_id", using: :btree
-
-  create_table "tags", force: :cascade do |t|
-    t.string   "descriptor", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+  add_index "trips", ["tag_id"], name: "index_trips_on_tag_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",           null: false
@@ -71,4 +73,5 @@ ActiveRecord::Schema.define(version: 20160727203945) do
   add_foreign_key "examples", "users"
   add_foreign_key "trips", "places"
   add_foreign_key "trips", "profiles"
+  add_foreign_key "trips", "tags"
 end
