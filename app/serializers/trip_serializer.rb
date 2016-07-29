@@ -1,5 +1,5 @@
 class TripSerializer < ActiveModel::Serializer
-  attributes :id, :budget
+  attributes :id, :visited, :tags
   has_one :profile
   has_one :place
 end

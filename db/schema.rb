@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727203945) do
+ActiveRecord::Schema.define(version: 20160729195330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "descriptions", force: :cascade do |t|
+    t.integer  "trip_id"
+    t.integer  "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "descriptions", ["tag_id"], name: "index_descriptions_on_tag_id", using: :btree
+  add_index "descriptions", ["trip_id"], name: "index_descriptions_on_trip_id", using: :btree
 
   create_table "examples", force: :cascade do |t|
     t.text     "text",       null: false
@@ -47,7 +57,7 @@ ActiveRecord::Schema.define(version: 20160727203945) do
   end
 
   create_table "trips", force: :cascade do |t|
-    t.boolean  "visited",    null: false
+    t.boolean  "visited"
     t.integer  "profile_id"
     t.integer  "place_id"
     t.integer  "tag_id"
@@ -70,6 +80,8 @@ ActiveRecord::Schema.define(version: 20160727203945) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["token"], name: "index_users_on_token", unique: true, using: :btree
 
+  add_foreign_key "descriptions", "tags"
+  add_foreign_key "descriptions", "trips"
   add_foreign_key "examples", "users"
   add_foreign_key "trips", "places"
   add_foreign_key "trips", "profiles"
