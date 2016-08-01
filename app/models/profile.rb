@@ -1,5 +1,6 @@
 class Profile < ActiveRecord::Base
-  validates :name, :bio, presence: true
+  validates :name, :bio, :user_id, presence: true
+  belongs_to :user
   has_many :trips
   has_many :places, through: :trips
 end

@@ -1,4 +1,4 @@
-class TripsController < ApplicationController
+class TripsController < ProtectedController
   before_action :set_trip, only: [:show, :update, :destroy]
 
   # GET /trips

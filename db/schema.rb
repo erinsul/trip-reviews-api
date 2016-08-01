@@ -46,9 +46,12 @@ ActiveRecord::Schema.define(version: 20160729195330) do
   create_table "profiles", force: :cascade do |t|
     t.string   "name",       null: false
     t.string   "bio",        null: false
+    t.integer  "user_id",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
 
   create_table "tags", force: :cascade do |t|
     t.string   "descriptor", null: false
@@ -83,6 +86,7 @@ ActiveRecord::Schema.define(version: 20160729195330) do
   add_foreign_key "descriptions", "tags"
   add_foreign_key "descriptions", "trips"
   add_foreign_key "examples", "users"
+  add_foreign_key "profiles", "users"
   add_foreign_key "trips", "places"
   add_foreign_key "trips", "profiles"
   add_foreign_key "trips", "tags"
