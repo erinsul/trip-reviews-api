@@ -1,3 +1,3 @@
 class PlaceSerializer < ActiveModel::Serializer
-  attributes :id, :name, :country, :continent, :profiles, :tags
+  attributes :id, :name, :country, :profiles, :tags
 end

@@ -18,7 +18,6 @@ curl --include --request POST http://localhost:3000/profiles \
       "place": {
         "name": "Tiger Leaping Gorge",
         "country": "China",
-        "continent": "Asia"
       }
     }'
 

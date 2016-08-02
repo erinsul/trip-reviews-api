@@ -1,0 +1,223 @@
+population,name,country
+210700,Aberdeen,UK
+1950000,Abidjan,Ivory Coast
+859640,Accra,Ghana
+1686300,Addis Abeba,Ethiopia
+176100,Aden,Yemen
+41200,Agrigento,IT
+101082,Albany,US
+1507241,Algiers,DZ
+936300,Amman,Jordania
+696500,Amsterdam,NL
+18463,Andorra,AD
+3485398,Los Angeles,US
+479748,Antwerpen,BE
+885737,Athinai,GR
+1714355,Barcelona,ES
+6710000,Beijing,CN
+3461421,Berlin,DE
+134393,Bern,CH
+384733,Bilbao,ES
+1013995,Birmingham,UK
+8243405,Bombay,IN
+296859,Bonn,DE
+574283,Boston,US
+1567709,Brasilia,BR
+413861,Bristol,UK
+136920,Bruxelles,BE
+2922829,Buenos Aires,AR
+6052836,Cairo,EG
+3305006,Calcutta,IN
+636104,Calgary,CA
+2783726,Chicago,US
+505616,Cleveland,US
+1006877,Dallas,US
+4884234,Delhi,IN
+467610,Denver,US
+601966,Dortmund,DE
+502749,Dublin,IE
+433200,Edinburgh,UK
+573982,Edmonton,CA
+190700,Eindhoven,NL
+45000,Eisenach,DE
+659803,Frankfurt/Main,DE
+83850,Frankfurt/Oder,DE
+233856,Gent,BE
+695630,Glasgow,UK
+167800,Groningen,NL
+1704534,Hamburg,DE
+2708,Hammerfest,NO
+139429,Heidelberg,DE
+490034,Helsinki,FI
+365272,Honolulu,US
+9200000,Jakarta,ID
+2587000,Kiew,RU
+1479218,Kyoto,JP
+4456000,Leningrad,RU
+807167,Lisboa,PT
+6574009,London,UK
+76130,Luxembourg,LU
+413095,Lyon,FR
+3102846,Madrid,ES
+874436,Marseille,FR
+368383,Minneapolis,US
+1015420,Montreal,CA
+8769000,Moskwa,RU
+1255623,Muenchen,DE
+2116381,Nagoya,JP
+1204211,Napoli,IT
+7322564,New York,US
+2636249,Osaka,JP
+452415,Oslo,NO
+300763,Ottawa,CA
+2078900,Paris,FR
+114600,Rimini,IT
+5603388,Rio de Janeiro,BR
+2815457,Roma,IT
+576300,Rotterdam,NL
+723959,San Francisco,US
+10063110,Sao Paolo,BR
+7220000,Shanghai,CN
+2685400,Singapore,SG
+1119152,Sofia,BG
+672187,Stockholm,SE
+8354615,Tokyo,JP
+1035565,Torino,IT
+612289,Toronto,CA
+230700,Utrecht,NL
+1651200,Warszawa,PL
+606900,Washington DC,US
+2992926,Yokohama,JP
+697925,Zagreb,CR
+342861,Zuerich,CH
+223818,Bahia Bianca,AR
+200891,Liege,BE
+201500,Vitoria,BR
+841016,Campinas,BR
+1287623,Recife,BR
+431147,Vancouver,CA
+306728,Hamilton,CA
+177641,Saskatoon,CA
+169587,Basel,CH
+246671,Aachen,DE
+72000,Bayreuth,DE
+30000,Biberach an der Riss,DE
+324674,Bielefeld,DE
+401058,Bochum,DE
+256267,Braunschweig,DE
+139754,Darmstadt,DE
+179000,Freiburg,DE
+73705,Giessen,DE
+128419,Goettingen,DE
+295372,Halle/Saale,DE
+524823,Hannover,DE
+43000,Homburg,DE
+100093,Jena,DE
+31100,Juelich,DE
+277998,Karlsruhe,DE
+962517,Koeln,DE
+165000,Ludwigshafen,DE
+185487,Mainz,DE
+76582,Marburg,DE
+147701,Oldenburg,DE
+168078,Osnabrueck,DE
+125337,Regensburg,DE
+190902,Saarbruecken,DE
+56400,Stolberg,DE
+594506,Stuttgart,DE
+83553,Tuebingen,DE
+114839,Ulm,DE
+386625,Wuppertal,DE
+128875,Wuerzburg,DE
+202300,Aarhus,DK
+466723,Kobenhavn,DK
+140100,Odense,DK
+150021,Alcala de Henares,ES
+263334,Granada,ES
+149800,Murcia,ES
+582239,Zaragoza,ES
+114000,Tartu,EE
+160456,Turku,FI
+156637,Grenoble,FR
+168424,Lille,FR
+248712,Strasbourg,FR
+347995,Toulouse,FR
+132209,Tours,FR
+406413,Thessaloniki,GR
+373789,Chandigarh,IN
+273036,New Delhi,IN
+727427,Genova,IT
+1495260,Milano,IT
+176880,Modena,IT
+175842,Parma,IT
+82065,Pavia,IT
+239031,Trieste,IT
+100211,Udine,IT
+259151,Verona,IT
+317800,Tel Aviv,IL
+432406,Bologna,IT
+220574,Cagliari,IT
+294045,Aomori,JP
+788930,Chiba,JP
+935933,San Antonio,US
+134,Hirosaki,JP
+1542979,Sapporo,JP
+915000,Riga,LV
+192770,Cuernavaca,MX
+8831079,Mexico,MX
+209320,Bergen,NO
+135010,Trondheim,NO
+76964,Dunedin,NZ
+199600,Torun,PL
+516259,Seattle,US
+327368,Porto,PT
+431840,Goteborg,SE
+108359,Helsingborg,SE
+164754,Uppsala,SE
+656927,Tainan,TW
+324394,Leicester,UK
+113874,Oxford,UK
+211321,Southampton,UK
+172433,Swansea,UK
+265968,Birmingham,US
+175795,Little Rock,US
+102724,Berkeley,US
+55900,Palo Alto,US
+131591,Pasadena,US
+226505,Riverside,US
+191262,Madison,US
+51555,Longmont,US
+130474,New Haven,US
+71529,Wilmington,US
+280015,Tampa,US
+47198,Ames,US
+59738,Iowa City,US
+36344,Urbana,US
+25907,West Lafayette,US
+95802,Cambridge,US
+23400,Shrewsbury,US
+736014,Baltimore,US
+62936,Bethesda,US
+21927,College Park,US
+40148,Frederick,US
+44835,Rockville,US
+6815,Columbia,US
+368383,Minneapolis,US
+335795,Omaha,US
+275221,Newark,US
+43800,Piscataway,US
+12016,Princeton,US
+25325,Rahway,US
+29541,Ithaca,US
+231636,Rochester,US
+28176,Bowling Green,US
+364040,Cincinnati,US
+632910,Columbus,US
+112669,Eugene,US
+1585577,Philadelphia,US
+369879,Pittsburgh,US
+610337,Memphis,US
+465622,Austin,US
+52456,College Station,US
+59070,Galveston,US
+1630553,Houston,US

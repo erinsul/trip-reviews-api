@@ -1,9 +1,9 @@
 class CreatePlaces < ActiveRecord::Migration
   def change
     create_table :places do |t|
+      t.integer :population
       t.string :name, null: false, unique: true
       t.string :country, null: false
-      t.string :continent, null: false
 
       t.timestamps null: false
     end
