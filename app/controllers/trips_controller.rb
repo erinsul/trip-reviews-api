@@ -4,7 +4,7 @@ class TripsController < ProtectedController
   # GET /trips
   # GET /trips.json
   def index
-    @trips = Trip.all
+    @trips = current_user.trips.all
 
     render json: @trips
   end
@@ -17,9 +17,20 @@ class TripsController < ProtectedController
 
   # POST /trips
   # POST /trips.json
+  #Check if the place exists
+  #If it does, it needs to find and add that id
+  #But if it doesn't, it needs to create the place
+  #then add the id as place_id to trip_id
+  #then create the trip :)
   def create
-    @trip = Trip.new(trip_params)
-
+    @trip = current_user.profile.trips.build(trip_params)
+    # puts trip_params
+    # @place = Place.find_by_name() || Place.new(trip_params)
+    #   if @place.save
+    #     @place = trip_params.place
+    #     @place.profiles << current_user.profile
+    #     redirect_to trip(@place)
+    #   end
     if @trip.save
       render json: @trip, status: :created, location: @trip
     else
@@ -50,10 +61,10 @@ class TripsController < ProtectedController
   private
 
     def set_trip
-      @trip = Trip.find(params[:id])
+      @trip = current_user.trips.find(params[:id])
     end
 
     def trip_params
-      params.require(:trip).permit(:visited, :profile_id, :places_id)
+      params.require(:trip).permit(:visited, :place_id, :profile_id)
     end
 end

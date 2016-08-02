@@ -22,6 +22,19 @@ curl --include --request POST http://localhost:3000/profiles \
       }
     }'
 
+  curl --include --request POST http://localhost:3000/trips \
+  --header "Authorization: Token token=BAhJIiVjOTk1OTMzZTQ2OGMwZDgwZmQ4OWIyODI2YTdkNTMwZQY6BkVG--2e783025b26551df849a3aea4693f52b0e6f278b" \
+      --header "Content-Type: application/json" \
+      --data '{
+        "trip": {
+          "visited": "true",
+          "profile_id": "1",
+          "place_id": "1"
+        }
+      }'
+
+
+
   curl --include --request POST http://localhost:3000/tags \
     --header "Content-Type: application/json" \
     --data '{

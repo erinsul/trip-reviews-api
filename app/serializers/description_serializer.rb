@@ -1,5 +1,3 @@
 class DescriptionSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :trip
-  has_one :tag
+  attributes :id, :trip_id, :tag_id
 end
