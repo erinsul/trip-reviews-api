@@ -51,7 +51,7 @@ class TripsController < ProtectedController
   private
 
     def set_trip
-      @trip = current_user.trips.find(params[:id])
+      @trip = current_user.profile.trips.find(params[:id])
     end
 
     def trip_params
