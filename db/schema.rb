@@ -36,7 +36,6 @@ ActiveRecord::Schema.define(version: 20160729195330) do
   add_index "examples", ["user_id"], name: "index_examples_on_user_id", using: :btree
 
   create_table "places", force: :cascade do |t|
-    t.integer  "population"
     t.string   "name",       null: false
     t.string   "country",    null: false
     t.datetime "created_at", null: false
