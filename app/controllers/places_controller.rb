@@ -4,7 +4,11 @@ class PlacesController < ApplicationController
   # GET /places
   # GET /places.json
   def index
-    @places = Place.all
+    if params[:name]
+      @places = Place.where(name: params[:name].capitalize)
+    else
+      @places=Place.all
+    end
 
     render json: @places
   end
