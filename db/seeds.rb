@@ -11,3 +11,9 @@ Place.transaction do
     Place.create(place.to_hash)
   end
 end
+
+Tag.transaction do
+  CSV.foreach 'data/tags.csv', headers: true do |tag|
+    Tag.create(tag.to_hash)
+  end
+end

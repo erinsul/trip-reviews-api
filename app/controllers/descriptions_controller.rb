@@ -4,7 +4,7 @@ class DescriptionsController < ApplicationController
   # GET /descriptions
   # GET /descriptions.json
   def index
-    @descriptions = Description.all
+    @descriptions = current_user.profile.trips.descriptions.all
 
     render json: @descriptions
   end
