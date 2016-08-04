@@ -22,6 +22,7 @@ class PlacesController < ApplicationController
   # POST /places
   # POST /places.json
   def create
+    place_params[:name].capitalize!
     @place = Place.new(place_params)
 
     if @place.save
