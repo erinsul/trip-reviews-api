@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :descriptions, except: [:new, :edit]
   resources :trips, except: [:new, :edit]
+  resources :descriptions, except: [:new, :edit]
   resources :places, only: [:index, :show, :create]
   resources :tags, only: [:index]
   resources :profiles, except: [:new, :edit]

@@ -4,8 +4,8 @@ class DescriptionsController < ApplicationController
   # GET /descriptions
   # GET /descriptions.json
   def index
-    @descriptions = current_user.profile.trips.descriptions.all
-
+    # @descriptions = Trip.find_by_id(params[:trip_id]).descriptions
+      @descriptions = Description.all
     render json: @descriptions
   end
 

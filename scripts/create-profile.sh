@@ -8,8 +8,8 @@ curl --include --request POST http://localhost:3000/profiles \
     }
   }'
 
-  curl --include --request GET http://localhost:3000/trips \
-  --header "Authorization: Token token=BAhJIiU4NDViOTlhOWZjM2RmYzY5M2NmN2NhNWRjMzlhZWJjMAY6BkVG--ca9f78bdf6ce89ab1acc509f0d2bc058f7337a2a" \
+  curl --include --request GET http://localhost:3000/trips/1/descriptions \
+  --header "Authorization: Token token=BAhJIiViMWIxY2M5NzMyNTk5MTg3ZDU4ZWVhMWIyNjMzZWYwNwY6BkVG--dbb1f118192d3b4cc31d45b34b91a8e2edb887c1" \
 
 
   curl --include --request POST http://localhost:3000/places \
