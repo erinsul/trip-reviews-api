@@ -18,8 +18,6 @@ class ProfilesController < ProtectedController
   # POST /profiles
   # POST /profiles.json
   def create
-    puts profile_params
-    puts current_user
     @profile = Profile.new(profile_params)
     @profile.user_id = current_user.id
 

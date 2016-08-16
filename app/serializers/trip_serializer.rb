@@ -1,5 +1,5 @@
 class TripSerializer < ActiveModel::Serializer
-  attributes :id, :visited, :place_id, :profile_id, :place, :profile, :tags
+  attributes :id, :visited, :place_id, :profile_id, :place, :profile, :tags, :descriptions
   def place
    object.place.id
   end
@@ -10,6 +10,10 @@ class TripSerializer < ActiveModel::Serializer
 
   def tags
    object.tags.pluck(:id)
+  end
+
+  def descriptions
+   object.descriptions.pluck(:id)
   end
 
 end

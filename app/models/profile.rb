@@ -3,4 +3,5 @@ class Profile < ActiveRecord::Base
   belongs_to :user
   has_many :trips
   has_many :places, through: :trips
+  has_many :descriptions, through: :trips
 end

@@ -1,10 +1,9 @@
-class DescriptionsController < ApplicationController
+class DescriptionsController < OpenReadController
   before_action :set_description, only: [:show, :update, :destroy]
 
   # GET /descriptions
   # GET /descriptions.json
   def index
-    # @descriptions = Trip.find_by_id(params[:trip_id]).descriptions
       @descriptions = Description.all
     render json: @descriptions
   end
@@ -18,7 +17,7 @@ class DescriptionsController < ApplicationController
   # POST /descriptions
   # POST /descriptions.json
   def create
-    @description = Description.new(description_params)
+    @description = current_user.profile.descriptions.build(description_params)
 
     if @description.save
       render json: @description, status: :created, location: @description
@@ -48,9 +47,9 @@ class DescriptionsController < ApplicationController
   end
 
   private
-
+  
     def set_description
-      @description = Description.find(params[:id])
+      @description = current_user.profile.descriptions.find(params[:id])
     end
 
     def description_params
